@@ -7,8 +7,8 @@ In this modified version of express you dont need to parse  cookies everytime wi
 i have did this because everytime i see new version of express comes out  it lacks cookie parsing and its really annoying ... 
 
 
+
 app.get("/", (req,res) => {
-	
 	res.cookie("namq","val", {expires: expiryDate});
 	res.write(`main`)
 
@@ -17,6 +17,7 @@ app.get("/", (req,res) => {
 	console.log(qq)
 	res.end()
 })
+
 
 
 
