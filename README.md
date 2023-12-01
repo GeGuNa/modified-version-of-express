@@ -9,7 +9,9 @@ i have did this because everytime i see new version of express comes out  it lac
 
 
 app.get("/", (req,res) => {
-	res.cookie("namq","val", {expires: expiryDate});
+
+	res.cookie("namq","val", { expires: expiryDate });
+	
 	res.write(`main`)
 
 	var qq = req.cookie("nqamq");
